@@ -21,7 +21,7 @@ cd /path/to/pear/PHP/CodeSniffer/Standards
 git clone git://github.com/opensky/Symfony2-coding-standard.git Symfony2
 ```
 
-5. Do the same for this standard (*Abstrus*).
+5. Do the same for this standard ( *Abstrus* ).
 
 6. Set *Abstrus* as your default coding standard:
 ```shell
