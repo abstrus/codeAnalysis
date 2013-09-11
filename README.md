@@ -8,7 +8,9 @@ Documentation
 
 See the respective documentation of any tool of this toolbox for more informations
 - [CodeSniffer](./CodeSniffer/)
+    A tool looking for coding standards violation
 - [MessDetector](./MessDetector/)
+    A tool measuring how messy your code is
 
 Credits
 -------
