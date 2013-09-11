@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<ruleset name="Abstrus">
+
+    <description>Abstrus coding standard</description>
+
+    <!--
+         Include all sniffs from the Symfony standard
+
+         for more information about the Symfony coding standard, see
+         http://symfony.com/doc/current/contributing/code/standards.html
+    -->
+    <rule ref="Symfony2"></rule>
+
+    <!--
+        Allow 100 character in a single line.  Raise error when 120 characters
+        is reached
+    -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="100"/>
+            <message>Line contains %s chars, which is longer than the max limit of %s</message>
+            <property name="absoluteLineLimit" value="120"/>
+            <message>Line longer than %s characters; contains %s characters</message>
+        </properties>
+    </rule>
+
+    <!-- 
+         Directory patterns to exclude from static analysis 
+    -->
+    <exclude-pattern></exclude-pattern>
+
+</ruleset>
