@@ -21,12 +21,19 @@ cd /path/to/pear/PHP/CodeSniffer/Standards
 git clone git://github.com/opensky/Symfony2-coding-standard.git Symfony2
 ```
 
-4. Set Symfony2 as your default coding standard:
+5. Do the same for this standard (*Abstrus*).
+
+6. Set *Abstrus* as your default coding standard:
 ```shell
-phpcs --config-set default_standard Symfony2
+phpcs --config-set default_standard Abstrus
 ```
 
-5. Profit!
+7. Make sure the standard is correctly installed
+```shell
+phpcs -i
+```
+
+8. Profit!
 ```shell
 cd /path/to/my/project
 phpcs
@@ -56,9 +63,11 @@ PhpStorm -> Preferences (on mac)
 
 ### SublimeText
 
-See informations for [a good plugin here](http://www.soulbroken.co.uk/code/sublimephpcs/).
+See [a good plugin here](http://www.soulbroken.co.uk/code/sublimephpcs/).
 
 ### Vim
+
+#### Using only the `phpcs` plugin
 
 1. Download the `.vim` file from [here](http://www.vim.org/scripts/script.php?script_id=3928)
 
@@ -67,7 +76,7 @@ See informations for [a good plugin here](http://www.soulbroken.co.uk/code/subli
 3. Set the coding standard to follow in your `~/.vimrc` :
 
 ```vim
-let g:phpcs_std_list="MyStandard" 
+let g:phpcs_std_list="Abstrus" 
 ```
 
 4. Set the max output line count in your `~/.vimrc` :
@@ -77,6 +86,10 @@ let g:phpcs_max_output = 0 " Unlimited output.
 " or 
 let g:phpcs_max_output = 2000 " Output limited to 2000 line 
 ```
+
+#### Using the `phpqa` plugin
+
+See the [official documentation](https://github.com/joonty/vim-phpqa).
 
 Credits
 -------
