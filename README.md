@@ -63,14 +63,17 @@ See informations for (a good plugin here)[http://www.soulbroken.co.uk/code/subli
 
 3. Set the coding standard to follow in your `~/.vimrc` :
 
+```
     let g:phpcs_std_list="MyStandard" 
+```
 
 4. Set the max output line count in your `~/.vimrc` :
 
+```
     let g:phpcs_max_output = 0 " Unlimited output. 
     " or 
     let g:phpcs_max_output = 2000 " Output limited to 2000 line 
-
+```
 
 Credits
 -------
