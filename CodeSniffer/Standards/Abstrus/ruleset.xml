@@ -28,6 +28,6 @@
     <!-- 
          Directory patterns to exclude from static analysis 
     -->
-    <exclude-pattern></exclude-pattern>:w
+    <exclude-pattern></exclude-pattern>
 
 </ruleset>
