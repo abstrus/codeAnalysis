@@ -28,9 +28,6 @@
     <!-- 
          Directory patterns to exclude from static analysis 
     -->
-    <exclude-pattern></exclude-pattern>
-
-    <rule ref="Squiz.Commenting.ClassComment" />
-      <rule ref="Squiz.Commenting.FileComment" />
+    <exclude-pattern></exclude-pattern>:w
 
 </ruleset>
