@@ -1,87 +1,39 @@
-Static Code Analysis Toolbox
-============================
+MessDetector tool
+=================
 
 Installation
 ------------
 
-1. Install phpcs:
-```shell
-pear install PHP_CodeSniffer
-```
+You can use several installation methods.  
+See the [official documentation](http://phpmd.org/download/index.html).
 
-2. Find your PEAR directory:
-```shell
-pear config-show | grep php_dir
-```
+Usage
+-----
 
-3. Copy, symlink or check out this repo to a folder called Symfony2 inside the
-   phpcs `Standards` directory:
-```shell
-cd /path/to/pear/PHP/CodeSniffer/Standards
-git clone git://github.com/opensky/Symfony2-coding-standard.git Symfony2
-```
+You can execute `phpmd` by CLI and link this rule set with it.  
+See the [official documentation](http://phpmd.org/documentation/index.html) for examples.
 
-4. Set Symfony2 as your default coding standard:
-```shell
-phpcs --config-set default_standard Symfony2
-```
+Follow the following instructions to automate the executation as an IDE feature.
 
-5. Profit!
-```shell
-cd /path/to/my/project
-phpcs
-phpcs path/to/my/file.php
-```
+Integration in your IDE
+-----------------------
 
-Integration with your text editor
----------------------------------
+### JetBrain apps
 
-### PhpStorm and IntelliJ
+#### Using PHPStorm
 
-1. Open the project settings:
-File -> Settings (on PC)
-PhpStorm -> Preferences (on mac)
+See the [documentation](http://www.jetbrains.com/phpstorm/webhelp/using-php-mess-detector.html).
 
-2. Click **Code Sniffer**
+#### Using IntelliJ
 
-3. Enter the the path of the Code Sniffer executable or select it using the lick the **Browse** button.
-
-4. Click the **Validate** button to check if the Code Sniffer is compatible with your editor.
-
-6. Select your coding standard from the combo box.
-
-7. Don't check the **Ignore warning** box !
-
-7. Joy !
+See the [documentation](http://www.jetbrains.com/idea/webhelp/using-php-mess-detector.html).
 
 ### SublimeText
 
-See informations for [a good plugin here](http://www.soulbroken.co.uk/code/sublimephpcs/).
+Use this [good plugin](http://www.soulbroken.co.uk/code/sublimephpcs/).
 
 ### Vim
 
-1. Download the `.vim` file from [here](http://www.vim.org/scripts/script.php?script_id=3928)
+#### Using the `phpqa` plugin
 
-2. Copy it to `~/.vim/plugin`
-
-3. Set the coding standard to follow in your `~/.vimrc` :
-
-```vim
-let g:phpcs_std_list="MyStandard" 
-```
-
-4. Set the max output line count in your `~/.vimrc` :
-
-```vim
-let g:phpcs_max_output = 0 " Unlimited output. 
-" or 
-let g:phpcs_max_output = 2000 " Output limited to 2000 line 
-```
-
-Credits
--------
-
-This doc and standard has mainly been taken from
-[the Symfony2 coding standard](https://github.com/opensky/Symfony2-coding-standard)
-
-
+See the [documentation](https://github.com/joonty/vim-phpqa).
