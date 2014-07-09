@@ -11,7 +11,7 @@
     -->
     <rule ref="Symfony2">
         <exclude name="Symfony2.NamingConventions.InterfaceSuffix"/>
-        <exclude name= "PEAR.Commenting.SpacingBeforeTags"/>
+        <exclude name="PEAR.Commenting.SpacingBeforeTags"/>
     </rule>
 
     <!--
